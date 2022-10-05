@@ -10,12 +10,13 @@
 		4DB7ACF5473DCBB0FF5C3B76 /* Pods_lijang_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7794F336C3A7EE2510F1B556 /* Pods_lijang_ios.framework */; };
 		C5B4450828EDF08F00EC787D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450728EDF08F00EC787D /* AppDelegate.swift */; };
 		C5B4450A28EDF08F00EC787D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450928EDF08F00EC787D /* SceneDelegate.swift */; };
-		C5B4450C28EDF08F00EC787D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450B28EDF08F00EC787D /* ViewController.swift */; };
 		C5B4450F28EDF08F00EC787D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4450D28EDF08F00EC787D /* Main.storyboard */; };
 		C5B4451128EDF09100EC787D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4451028EDF09100EC787D /* Assets.xcassets */; };
 		C5B4451428EDF09100EC787D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4451228EDF09100EC787D /* LaunchScreen.storyboard */; };
 		C5B4451D28EDF13E00EC787D /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5B4451C28EDF13E00EC787D /* ParseSwift */; };
 		C5B4452028EDF15900EC787D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5B4451F28EDF15900EC787D /* AlamofireImage */; };
+		C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452128EDF5DB00EC787D /* loginViewController.swift */; };
+		C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452328EDF5E600EC787D /* feedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +26,12 @@
 		C5B4450428EDF08F00EC787D /* lijang.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lijang.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B4450728EDF08F00EC787D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B4450928EDF08F00EC787D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5B4450B28EDF08F00EC787D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B4450E28EDF08F00EC787D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B4451028EDF09100EC787D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B4451328EDF09100EC787D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B4451528EDF09100EC787D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B4452128EDF5DB00EC787D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		C5B4452328EDF5E600EC787D /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,6 @@
 				8A38544955FF8518088923F8 /* Pods-lijang.ios.debug.xcconfig */,
 				6D26234BD859DED41426CF7E /* Pods-lijang.ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,13 +88,22 @@
 			children = (
 				C5B4450728EDF08F00EC787D /* AppDelegate.swift */,
 				C5B4450928EDF08F00EC787D /* SceneDelegate.swift */,
-				C5B4450B28EDF08F00EC787D /* ViewController.swift */,
 				C5B4450D28EDF08F00EC787D /* Main.storyboard */,
 				C5B4451028EDF09100EC787D /* Assets.xcassets */,
 				C5B4451228EDF09100EC787D /* LaunchScreen.storyboard */,
 				C5B4451528EDF09100EC787D /* Info.plist */,
+				C5B4452528EDF5F600EC787D /* View Controllers */,
 			);
 			path = lijang.ios;
+			sourceTree = "<group>";
+		};
+		C5B4452528EDF5F600EC787D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5B4452128EDF5DB00EC787D /* loginViewController.swift */,
+				C5B4452328EDF5E600EC787D /* feedViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +157,7 @@
 			);
 			mainGroup = C5B444FB28EDF08F00EC787D;
 			packageReferences = (
-				C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */,
+				C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 				C5B4451E28EDF15900EC787D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = C5B4450528EDF08F00EC787D /* Products */;
@@ -219,9 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B4450C28EDF08F00EC787D /* ViewController.swift in Sources */,
 				C5B4450828EDF08F00EC787D /* AppDelegate.swift in Sources */,
 				C5B4450A28EDF08F00EC787D /* SceneDelegate.swift in Sources */,
+				C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */,
+				C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +454,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */ = {
+		C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
 			requirement = {
@@ -464,7 +475,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		C5B4451C28EDF13E00EC787D /* ParseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */;
+			package = C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
 		};
 		C5B4451F28EDF15900EC787D /* AlamofireImage */ = {
