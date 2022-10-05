@@ -13,6 +13,8 @@
 		C5B4450F28EDF08F00EC787D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4450D28EDF08F00EC787D /* Main.storyboard */; };
 		C5B4451128EDF09100EC787D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B4451028EDF09100EC787D /* Assets.xcassets */; };
 		C5B4451428EDF09100EC787D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B4451228EDF09100EC787D /* LaunchScreen.storyboard */; };
+		C5B4451D28EDF13E00EC787D /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5B4451C28EDF13E00EC787D /* ParseSwift */; };
+		C5B4452028EDF15900EC787D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5B4451F28EDF15900EC787D /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B4451D28EDF13E00EC787D /* ParseSwift in Frameworks */,
+				C5B4452028EDF15900EC787D /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = lijang.ios;
+			packageProductDependencies = (
+				C5B4451C28EDF13E00EC787D /* ParseSwift */,
+				C5B4451F28EDF15900EC787D /* AlamofireImage */,
+			);
 			productName = lijang.ios;
 			productReference = C5B4450428EDF08F00EC787D /* lijang.ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = C5B444FB28EDF08F00EC787D;
+			packageReferences = (
+				C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				C5B4451E28EDF15900EC787D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = C5B4450528EDF08F00EC787D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C5B4451E28EDF15900EC787D /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5B4451C28EDF13E00EC787D /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		C5B4451F28EDF15900EC787D /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5B4451E28EDF15900EC787D /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5B444FC28EDF08F00EC787D /* Project object */;
 }
