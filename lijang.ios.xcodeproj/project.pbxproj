@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB7ACF5473DCBB0FF5C3B76 /* Pods_lijang_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7794F336C3A7EE2510F1B556 /* Pods_lijang_ios.framework */; };
 		C5B4450828EDF08F00EC787D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450728EDF08F00EC787D /* AppDelegate.swift */; };
 		C5B4450A28EDF08F00EC787D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450928EDF08F00EC787D /* SceneDelegate.swift */; };
 		C5B4450C28EDF08F00EC787D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4450B28EDF08F00EC787D /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D26234BD859DED41426CF7E /* Pods-lijang.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lijang.ios.release.xcconfig"; path = "Target Support Files/Pods-lijang.ios/Pods-lijang.ios.release.xcconfig"; sourceTree = "<group>"; };
+		7794F336C3A7EE2510F1B556 /* Pods_lijang_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lijang_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A38544955FF8518088923F8 /* Pods-lijang.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lijang.ios.debug.xcconfig"; path = "Target Support Files/Pods-lijang.ios/Pods-lijang.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B4450428EDF08F00EC787D /* lijang.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lijang.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B4450728EDF08F00EC787D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B4450928EDF08F00EC787D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,38 @@
 			files = (
 				C5B4451D28EDF13E00EC787D /* ParseSwift in Frameworks */,
 				C5B4452028EDF15900EC787D /* AlamofireImage in Frameworks */,
+				4DB7ACF5473DCBB0FF5C3B76 /* Pods_lijang_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025928C9AF409E183579EB16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7794F336C3A7EE2510F1B556 /* Pods_lijang_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70B6CBECEC2FFFABAC588B4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A38544955FF8518088923F8 /* Pods-lijang.ios.debug.xcconfig */,
+				6D26234BD859DED41426CF7E /* Pods-lijang.ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C5B444FB28EDF08F00EC787D = {
 			isa = PBXGroup;
 			children = (
 				C5B4450628EDF08F00EC787D /* lijang.ios */,
 				C5B4450528EDF08F00EC787D /* Products */,
+				70B6CBECEC2FFFABAC588B4B /* Pods */,
+				025928C9AF409E183579EB16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B4451828EDF09100EC787D /* Build configuration list for PBXNativeTarget "lijang.ios" */;
 			buildPhases = (
+				D10ACEED5B31CD5743935E9B /* [CP] Check Pods Manifest.lock */,
 				C5B4450028EDF08F00EC787D /* Sources */,
 				C5B4450128EDF08F00EC787D /* Frameworks */,
 				C5B4450228EDF08F00EC787D /* Resources */,
+				F6777F058F9C4589E60B914F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,7 +147,7 @@
 			);
 			mainGroup = C5B444FB28EDF08F00EC787D;
 			packageReferences = (
-				C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */,
 				C5B4451E28EDF15900EC787D /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = C5B4450528EDF08F00EC787D /* Products */;
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D10ACEED5B31CD5743935E9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lijang.ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6777F058F9C4589E60B914F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lijang.ios/Pods-lijang.ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lijang.ios/Pods-lijang.ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lijang.ios/Pods-lijang.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5B4450028EDF08F00EC787D /* Sources */ = {
@@ -294,6 +363,7 @@
 		};
 		C5B4451928EDF09100EC787D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A38544955FF8518088923F8 /* Pods-lijang.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +392,7 @@
 		};
 		C5B4451A28EDF09100EC787D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D26234BD859DED41426CF7E /* Pods-lijang.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,7 +443,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+		C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
 			requirement = {
@@ -393,7 +464,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		C5B4451C28EDF13E00EC787D /* ParseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			package = C5B4451B28EDF13E00EC787D /* XCRemoteSwiftPackageReference "Parse-Swift.git" */;
 			productName = ParseSwift;
 		};
 		C5B4451F28EDF15900EC787D /* AlamofireImage */ = {
