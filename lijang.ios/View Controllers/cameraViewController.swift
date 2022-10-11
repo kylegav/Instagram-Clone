@@ -7,7 +7,7 @@
 
 import UIKit
 
-class cameraViewController: UIViewController, UIImagePickerControllerDelegate {
+class cameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -25,6 +25,16 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate {
     }
     
     @IBAction func onCamera(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        present(picker, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
