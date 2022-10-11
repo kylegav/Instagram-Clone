@@ -18,6 +18,7 @@
 		C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452128EDF5DB00EC787D /* loginViewController.swift */; };
 		C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452328EDF5E600EC787D /* feedViewController.swift */; };
 		C5C4E60A28F5EA6A00483221 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4E60928F5EA6A00483221 /* cameraViewController.swift */; };
+		C5C4E60D28F6241300483221 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4E60C28F6241300483221 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C5B4452128EDF5DB00EC787D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		C5B4452328EDF5E600EC787D /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
 		C5C4E60928F5EA6A00483221 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		C5C4E60C28F6241300483221 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				C5B4451028EDF09100EC787D /* Assets.xcassets */,
 				C5B4451228EDF09100EC787D /* LaunchScreen.storyboard */,
 				C5B4451528EDF09100EC787D /* Info.plist */,
+				C5C4E60B28F623F900483221 /* Cell */,
 				C5B4452528EDF5F600EC787D /* View Controllers */,
 			);
 			path = lijang.ios;
@@ -107,6 +110,14 @@
 				C5C4E60928F5EA6A00483221 /* cameraViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C5C4E60B28F623F900483221 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C5C4E60C28F6241300483221 /* PostTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				C5C4E60A28F5EA6A00483221 /* cameraViewController.swift in Sources */,
 				C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */,
 				C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */,
+				C5C4E60D28F6241300483221 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

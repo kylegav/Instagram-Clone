@@ -9,6 +9,9 @@ import UIKit
 
 class feedViewController: UIViewController {
 
+
+    @IBOutlet weak var photoFeed: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
