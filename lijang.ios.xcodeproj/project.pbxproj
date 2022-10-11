@@ -17,6 +17,7 @@
 		C5B4452028EDF15900EC787D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5B4451F28EDF15900EC787D /* AlamofireImage */; };
 		C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452128EDF5DB00EC787D /* loginViewController.swift */; };
 		C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B4452328EDF5E600EC787D /* feedViewController.swift */; };
+		C5C4E60A28F5EA6A00483221 /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4E60928F5EA6A00483221 /* cameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C5B4451528EDF09100EC787D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B4452128EDF5DB00EC787D /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		C5B4452328EDF5E600EC787D /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
+		C5C4E60928F5EA6A00483221 /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				C5B4452128EDF5DB00EC787D /* loginViewController.swift */,
 				C5B4452328EDF5E600EC787D /* feedViewController.swift */,
+				C5C4E60928F5EA6A00483221 /* cameraViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				C5B4450828EDF08F00EC787D /* AppDelegate.swift in Sources */,
 				C5B4450A28EDF08F00EC787D /* SceneDelegate.swift in Sources */,
+				C5C4E60A28F5EA6A00483221 /* cameraViewController.swift in Sources */,
 				C5B4452428EDF5E600EC787D /* feedViewController.swift in Sources */,
 				C5B4452228EDF5DB00EC787D /* loginViewController.swift in Sources */,
 			);
