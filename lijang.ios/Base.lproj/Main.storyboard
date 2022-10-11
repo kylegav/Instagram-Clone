@@ -108,16 +108,14 @@
                                                         <constraint firstAttribute="width" secondItem="FvR-NZ-ocB" secondAttribute="height" multiplier="187:148" id="7Kh-3B-Paq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-mV-lF7">
-                                                    <rect key="frame" x="20" y="304" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-mV-lF7">
+                                                    <rect key="frame" x="6" y="302" width="45" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wow! What a nice photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ov-5C-tVq">
-                                                    <rect key="frame" x="111" y="295" width="270" height="38"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow! What a nice photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ov-5C-tVq">
+                                                    <rect key="frame" x="61" y="302" width="323" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -125,8 +123,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="FvR-NZ-ocB" firstAttribute="leading" secondItem="Jho-oo-Thm" secondAttribute="leading" constant="8" id="6ei-3A-9tN"/>
+                                                <constraint firstAttribute="bottom" secondItem="qfx-mV-lF7" secondAttribute="bottom" constant="10" id="8W8-ZB-QVB"/>
                                                 <constraint firstAttribute="trailing" secondItem="FvR-NZ-ocB" secondAttribute="trailing" constant="8" id="AMB-1a-d9z"/>
+                                                <constraint firstItem="qfx-mV-lF7" firstAttribute="leading" secondItem="Jho-oo-Thm" secondAttribute="leading" constant="6" id="DUV-vO-hQF"/>
                                                 <constraint firstItem="FvR-NZ-ocB" firstAttribute="top" secondItem="Jho-oo-Thm" secondAttribute="top" id="Ms1-Gc-Hro"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Ov-5C-tVq" secondAttribute="bottom" constant="10" id="bOu-fq-B63"/>
+                                                <constraint firstItem="9Ov-5C-tVq" firstAttribute="leading" secondItem="qfx-mV-lF7" secondAttribute="trailing" constant="10" id="cUk-Xx-x6b"/>
+                                                <constraint firstItem="9Ov-5C-tVq" firstAttribute="top" secondItem="FvR-NZ-ocB" secondAttribute="bottom" constant="6" id="f5x-Hv-EPh"/>
+                                                <constraint firstItem="qfx-mV-lF7" firstAttribute="top" secondItem="FvR-NZ-ocB" secondAttribute="bottom" constant="6" id="ofE-rN-7lx"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Ov-5C-tVq" secondAttribute="trailing" constant="6" id="sQB-hO-BeJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
