@@ -8,5 +8,6 @@ target 'lijang.ios' do
   # Pods for lijang.ios
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 
 end
